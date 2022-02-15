@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jlDC76sHj53ECuj5WM74+MQU5QOvWGwQ6Jo/Lj2nIJ22FvUMVi8Xu5PMGvv7Ikgii8MPiJpOZp49Sl11ZUY4OA==",
+  "dgSpecHash": "7QZFNDmF30T7BGj19KIASVDcw6D5xWP5d0P9xOCvfIYndwqrOHjSathw/iz3Qol+P22AlIEYAe5gJCBu9pmkeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hido\\source\\repos\\MarsCompTask2022\\MarCompetitionTask\\MarsCompTask2022.csproj",
   "expectedPackageFiles": [
@@ -108,7 +108,7 @@
     "C:\\Users\\Hido\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\selenium.support\\4.1.0\\selenium.support.4.1.0.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
-    "C:\\Users\\Hido\\.nuget\\packages\\selenium.webdriver.chromedriver\\96.0.4664.4500\\selenium.webdriver.chromedriver.96.0.4664.4500.nupkg.sha512",
+    "C:\\Users\\Hido\\.nuget\\packages\\selenium.webdriver.chromedriver\\98.0.4758.8000\\selenium.webdriver.chromedriver.98.0.4758.8000.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
@@ -197,8 +197,7 @@
     "C:\\Users\\Hido\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Hido\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\Hido\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Hido\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+    "C:\\Users\\Hido\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

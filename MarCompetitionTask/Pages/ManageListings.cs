@@ -13,9 +13,9 @@ namespace MarsCompTask2022.Pages
         private IWebDriver driver;
 
         //Initialising driver
-        public ManageListings(IWebDriver driver)
+        public ManageListings()
         {
-            this.driver = driver;
+           
             ExcelLibHelpers.PopulateInDataCollection((MarsResource.ExcelPath), "ManageListings");
         }
 
@@ -46,18 +46,18 @@ namespace MarsCompTask2022.Pages
         public void EditManageListings()
         {
             editManageListBtn.Click();
-            WaitHelper.WaitForElementPresent(driver, "Name", "title", 4);
+            WaitHelper.WaitForElementPresent(driver, "Name", "title", 5);
         }
 
         public void NavigateManageListings()
         {
             manageListingNavigation.Click();
-            WaitHelper.WaitForElementPresent(driver, "XPath", "//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[8]/div/button[2]/i", 4);
+            WaitHelper.WaitForElementPresent(driver, "XPath", "//*[@id='listing-management-section']/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[8]/div/button[2]/i", 5);
         }
 
-        public void AddManageListingsActive(IWebDriver driver)
+        public void AddManageListingsActive()
         {
-            this.driver = driver;
+            
             // By calling Excel library to retrive the records
             var expectedCategory = ExcelLibHelpers.ReadData(2, "Category");
             var expectedTitle = ExcelLibHelpers.ReadData(2, "Title");
@@ -84,9 +84,9 @@ namespace MarsCompTask2022.Pages
             });
         }
 
-        public void EditManageListingsHidden(IWebDriver driver)
+        public void EditManageListingsHidden()
         {
-            this.driver = driver;
+            
             // By calling Excel library to retrive the records
             var expectedCategory = ExcelLibHelpers.ReadData(3, "Category2");
             var expectedTitle = ExcelLibHelpers.ReadData(3, "Title2");
@@ -113,12 +113,13 @@ namespace MarsCompTask2022.Pages
             });
         }
 
-        public void ViewManageListingsActive(IWebDriver driver)
+        public void ViewManageListingsActive()
         {
-            this.driver = driver;
+           
             viewBtn.Click();
             bodyContent.Click();
             WaitHelper.WaitForElementPresent(driver, "XPath", "//*[@id='service-detail-section']/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[2]", 2);
+          
             // By calling Excel library to retrive the records
             var expectedCategory = "Programming & Tech";
             var expectedSubCategory = "QA";
@@ -150,7 +151,7 @@ namespace MarsCompTask2022.Pages
                 Assert.AreEqual(ActualStartDate, expectedStartDate, "Actual Start Date and expected start date don't match");
                 Assert.AreEqual(ActualEndDate, expectedEndDate, "Actual End Date and expected end Date don't match");
                 Assert.AreEqual(ActualLocationType, expectedLocationType, "Actual Location Type and expected location type don't match");
-                Assert.AreEqual(ActualSkillTrade, expectedSkillTrade, "Actual Skill Trade and expected skill trade type don't match");
+                Assert.AreEqual(ActualSkillTrade, expectedSkillTrade, "Actual Skill Trade and expected skill trade type don't match");               
             });
 
             // Back to the Manage listing Page
@@ -160,6 +161,7 @@ namespace MarsCompTask2022.Pages
         public void DeleteManageListingBtn()
         {
             deleteManageListBtn.Click();
+
             // Wait Implementation for delete the service textbox to be visible
             WaitHelper.WaitForElementPresent(driver, "XPath", "/html/body/div[2]/div/div[3]/button[2]", 2);
             deleteManageListBtn1.Click();

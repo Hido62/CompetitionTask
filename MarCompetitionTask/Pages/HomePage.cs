@@ -17,9 +17,9 @@ namespace MarsCompTask2022.Pages
         private IWebElement manageListing => driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[1]/div/a[3]"));
 
 
-        public void NavToHomePage(IWebDriver driver)
+        public void NavToHomePage()
         {
-            this.driver = driver;
+           
             Actions Hover = new Actions(driver);
 
             //Select Seller from the seller dropdown
@@ -29,17 +29,17 @@ namespace MarsCompTask2022.Pages
             GoToProfile.Click();
         }
 
-        public void ShareSkillBtn(IWebDriver driver)
+        public void ShareSkillBtn()
         {
             //Navigate to share skill button
-            this.driver = driver;
+            
             ShareSkills.Click();
         }
 
         public void NavManageListings()
         {
             //Navigate to manage Listing Tab
-            this.driver = driver;
+           
             manageListing.Click();
         }
 

@@ -11,9 +11,9 @@ namespace MarsCompTask2022.Pages
         private IWebDriver driver;
 
         //Initialising driver through constructor
-        public LoginPage(IWebDriver driver)
+        public LoginPage()
         {
-            this.driver = driver;
+           
             ExcelLibHelpers.PopulateInDataCollection((MarsResource.ExcelPath), "Login");
         }
 
@@ -27,9 +27,9 @@ namespace MarsCompTask2022.Pages
 
         private string Name = ExcelLibHelpers.ReadData(2, "name");
 
-        public void LoginSteps(IWebDriver driver)
+        public void LoginSteps()
         {
-            this.driver = driver;
+            //this.driver = driver;
             ExcelLibHelpers.PopulateInDataCollection((MarsResource.ExcelPath), "LogIn");
 
             //var Name = ExcelLibHelpers.ReadData(rownum, "name");

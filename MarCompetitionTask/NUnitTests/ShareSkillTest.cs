@@ -16,22 +16,22 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
+            LoginPage loginPageObj = new LoginPage();
 
-            loginPageObj.LoginSteps(driver);
+            loginPageObj.LoginSteps();
             TestContext.WriteLine(loginPageObj);
 
             // Home Page object initialization and definition
             HomePage homePageObj = new HomePage();
-            homePageObj.ShareSkillBtn(driver);
+            homePageObj.ShareSkillBtn();
 
             //SaveScreenShotClass.SaveScreenshot1(testDriver, "TestShareSkill");
             test.Log(Status.Info, "Share Skill Page is Opened");
 
             // Share Skill Page object initialization and definition
-            ShareSkill shareSkillObj = new ShareSkill(driver);
+            ShareSkill shareSkillObj = new ShareSkill();
 
-            shareSkillObj.AddwithoutData(driver);
+            shareSkillObj.AddwithoutData();
             shareSkillObj.SaveShareSkill();
             test.Log(Status.Info, "ShareSkill is not Saved");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(35);
@@ -44,28 +44,28 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
+            LoginPage loginPageObj = new LoginPage();
 
-            loginPageObj.LoginSteps(driver);
+            loginPageObj.LoginSteps();
             TestContext.WriteLine(loginPageObj);
 
             // Home Page object initialization and definition
             HomePage homePageObj = new HomePage();
-            homePageObj.ShareSkillBtn(driver);
+            homePageObj.ShareSkillBtn();
 
             //SaveScreenShotClass.SaveScreenshot1(testDriver, "TestShareSkill");
             test.Log(Status.Info, "Share Skill Page is Opened");
 
             // Share Skill Page object initialization and definition
-            ShareSkill shareSkillObj = new ShareSkill(driver);
+            ShareSkill shareSkillObj = new ShareSkill();
 
-            shareSkillObj.AddInvaildTitle(driver);
-            shareSkillObj.AddInvaildDescription(driver);
-            shareSkillObj.AddInvalidEnterTags(driver);
+            shareSkillObj.AddInvaildTitle();
+            shareSkillObj.AddInvaildDescription();
+            shareSkillObj.AddInvalidEnterTags();
             shareSkillObj.ServiceTypeHourly();
             shareSkillObj.LocationTypeOnline();
-            shareSkillObj.AddInvalidAvailDays(driver);
-            shareSkillObj.AddInvalidSkillExchange(driver);
+            shareSkillObj.AddInvalidAvailDays();
+            shareSkillObj.AddInvalidSkillExchange();
             shareSkillObj.ActiveShareSkill();
             shareSkillObj.SaveShareSkill();
             test.Log(Status.Info, "ShareSkill is not Saved");
@@ -79,38 +79,38 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
+            LoginPage loginPageObj = new LoginPage();
 
-            loginPageObj.LoginSteps(driver);
+            loginPageObj.LoginSteps();
             TestContext.WriteLine(loginPageObj);
 
             // Home Page object initialization and definition
             HomePage homePageObj = new HomePage();
-            homePageObj.ShareSkillBtn(driver);
+            homePageObj.ShareSkillBtn();
 
             //SaveScreenShotClass.SaveScreenshot1(testDriver, "TestShareSkill");
             test.Log(Status.Info, "Share Skill Page is Opened");
 
             // Share Skill Page object initialization and definition
-            ShareSkill shareSkillObj = new ShareSkill(driver);
+            ShareSkill shareSkillObj = new ShareSkill();
 
-            shareSkillObj.AddTitle(driver);
-            shareSkillObj.AddDescription(driver);
-            shareSkillObj.SelectAddCategory(driver);
-            shareSkillObj.SelectAddSubCategory(driver);
-            shareSkillObj.AddEnterTags(driver);
+            shareSkillObj.AddTitle();
+            shareSkillObj.AddDescription();
+            shareSkillObj.SelectAddCategory();
+            shareSkillObj.SelectAddSubCategory();
+            shareSkillObj.AddEnterTags();
             shareSkillObj.ServiceTypeHourly();
             shareSkillObj.LocationTypeOnline();
-            shareSkillObj.AddAvailableDays(driver);
-            shareSkillObj.SkillExchange(driver);
+            shareSkillObj.AddAvailableDays();
+            shareSkillObj.SkillExchange();
             shareSkillObj.ActiveShareSkill();
             shareSkillObj.SaveShareSkill();
             test.Log(Status.Info, "ShareSkill is Saved");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(35);
 
             // Manage Listings Page object initialization and definition
-            ManageListings manageListsObj = new ManageListings(driver);
-            manageListsObj.AddManageListingsActive(driver);
+            ManageListings manageListsObj = new ManageListings();
+            manageListsObj.AddManageListingsActive();
             test.Log(Status.Pass, "Assert Pass as condition is True & Manage listing is active");
         }
 
@@ -121,33 +121,33 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
-            loginPageObj.LoginSteps(driver);
+            LoginPage loginPageObj = new LoginPage();
+            loginPageObj.LoginSteps();
 
             // Manage Listings Page object initialization and definition
-            ManageListings manageListsObj = new ManageListings(driver);
+            ManageListings manageListsObj = new ManageListings();
             manageListsObj.NavigateManageListings();
             manageListsObj.EditManageListings();
 
             // Share Skill Page object initialization and definition
-            ShareSkill shareSkillObj = new ShareSkill(driver);
+            ShareSkill shareSkillObj = new ShareSkill();
 
             test.Log(Status.Info, "Share Skill Page is Opened");
 
-            shareSkillObj.EditTitle(driver);
-            shareSkillObj.EditDescription(driver);
-            shareSkillObj.SelectEditCategory(driver);
-            shareSkillObj.SelectEditSubCategory(driver);
-            shareSkillObj.EditTags(driver);
+            shareSkillObj.EditTitle();
+            shareSkillObj.EditDescription();
+            shareSkillObj.SelectEditCategory();
+            shareSkillObj.SelectEditSubCategory();
+            shareSkillObj.EditTags();
             shareSkillObj.ServiceTypeOne_off();
             shareSkillObj.LocationTypeOnsite();
-            shareSkillObj.EditAvailableDays(driver);
-            shareSkillObj.EditCreditExchange(driver);
+            shareSkillObj.EditAvailableDays();
+            shareSkillObj.EditCreditExchange();
             shareSkillObj.HiddenShareSkill();
             shareSkillObj.SaveShareSkill();
             test.Log(Status.Info, "ShareSkill is Saved");
 
-            manageListsObj.EditManageListingsHidden(driver);
+            manageListsObj.EditManageListingsHidden();
             test.Log(Status.Pass, "Assert Pass as condition is True and Manage listing is Hidden");
         }
     }

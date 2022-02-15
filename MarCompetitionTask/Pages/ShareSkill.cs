@@ -12,9 +12,9 @@ namespace MarsCompTask2022.Pages
         private IWebDriver driver;
 
         //Initialise driver
-        public ShareSkill(IWebDriver driver)
+        public ShareSkill()
         {
-            this.driver = driver;
+           
             PageFactory.InitElements(driver, this);
             ExcelLibHelpers.PopulateInDataCollection((MarsResource.ExcelPath), "ShareSkill");
         }
@@ -104,25 +104,25 @@ namespace MarsCompTask2022.Pages
         private IWebElement deleteTag1 { get; set; }
 
         // Create Skill Share Page & add the title
-        public void AddTitle(IWebDriver driver)
+        public void AddTitle()
         {
-            this.driver = driver;
-            WaitHelper.WaitForElementPresent(driver, "Name", "title", 2);
+            
+            WaitHelper.WaitForElementPresent(driver, "Name", "title", 3);
             title.SendKeys(ExcelLibHelpers.ReadData(2, "Title"));
         }
 
         // Add the description
-        public void AddDescription(IWebDriver driver)
+        public void AddDescription()
         {
-            this.driver = driver;
+           
             WaitHelper.WaitForElementPresent(driver, "Name", "description", 2);
             description.SendKeys(ExcelLibHelpers.ReadData(2, "Description"));
         }
 
         // Select the category
-        public void SelectAddCategory(IWebDriver driver)
+        public void SelectAddCategory()
         {
-            this.driver = driver;
+            
             WaitHelper.WaitForElementPresent(driver, "Name", "categoryId", 2);
             SelectElement select = new SelectElement(categoryId);
             var categoryData = ExcelLibHelpers.ReadData(2, "Category");
@@ -130,9 +130,9 @@ namespace MarsCompTask2022.Pages
         }
 
         //Select Sub Category
-        public void SelectAddSubCategory(IWebDriver driver)
+        public void SelectAddSubCategory()
         {
-            this.driver = driver;
+           
             WaitHelper.WaitForElementPresent(driver, "Name", "subcategoryId", 2);
             SelectElement select = new SelectElement(subCategoryId);
             var subCategorydata = ExcelLibHelpers.ReadData(2, "SubCategory");
@@ -140,9 +140,9 @@ namespace MarsCompTask2022.Pages
         }
 
         // Add the Tags on Share skill
-        public void AddEnterTags(IWebDriver driver)
+        public void AddEnterTags()
         {
-            this.driver = driver;
+           
             var tagData = ExcelLibHelpers.ReadData(2, "Tag");
             tags.SendKeys(tagData);
             tags.SendKeys(Keys.Enter);
@@ -171,9 +171,9 @@ namespace MarsCompTask2022.Pages
             locationTypeOnline.Click();
         }
 
-        public void AddAvailableDays(IWebDriver driver)
+        public void AddAvailableDays()
         {
-            this.driver = driver;
+            
             var startDateData = ExcelLibHelpers.ReadData(2, "StartDate");
             startDate.SendKeys(startDateData);
             var endDateData = ExcelLibHelpers.ReadData(2, "EndDate");
@@ -185,9 +185,9 @@ namespace MarsCompTask2022.Pages
             endtime1.SendKeys(EndTimeData);
         }
 
-        public void SkillExchange(IWebDriver driver)
+        public void SkillExchange()
         {
-            this.driver = driver;
+           
             skillTradeExchange.Click();
             var skill = ExcelLibHelpers.ReadData(2, "SkillExchange");
             skill_Exchange.SendKeys(skill);
@@ -197,9 +197,9 @@ namespace MarsCompTask2022.Pages
             skill_Exchange.SendKeys(Keys.Enter);
         }
 
-        public void EditCreditExchange(IWebDriver driver)
+        public void EditCreditExchange()
         {
-            this.driver = driver;
+           
             skillTradeCredit.Click();
             var creditAmt = ExcelLibHelpers.ReadData(2, "Credit");
             credit.SendKeys(creditAmt);
@@ -221,27 +221,27 @@ namespace MarsCompTask2022.Pages
         }
 
         // Edit Skill Share Page & the title
-        public void EditTitle(IWebDriver driver)
+        public void EditTitle()
         {
-            this.driver = driver;
+            
             title.Clear();
             WaitHelper.WaitForElementPresent(driver, "Name", "title", 3);
             title.SendKeys(ExcelLibHelpers.ReadData(3, "Title2"));
         }
 
         // Edit the description
-        public void EditDescription(IWebDriver driver)
+        public void EditDescription()
         {
-            this.driver = driver;
+            
             description.Clear();
             WaitHelper.WaitForElementPresent(driver, "Name", "description", 3);
             description.SendKeys(ExcelLibHelpers.ReadData(3, "Description2"));
         }
 
         // Edit the category
-        public void SelectEditCategory(IWebDriver driver)
+        public void SelectEditCategory()
         {
-            this.driver = driver;
+           
             WaitHelper.WaitForElementPresent(driver, "Name", "categoryId", 2);
             SelectElement select = new SelectElement(categoryId);
             var categoryData = ExcelLibHelpers.ReadData(3, "Category2");
@@ -249,9 +249,9 @@ namespace MarsCompTask2022.Pages
         }
 
         //Edit Sub Category
-        public void SelectEditSubCategory(IWebDriver driver)
+        public void SelectEditSubCategory()
         {
-            this.driver = driver;
+           
             WaitHelper.WaitForElementPresent(driver, "Name", "subcategoryId", 2);
             SelectElement select = new SelectElement(subCategoryId);
             var subCategorydata = ExcelLibHelpers.ReadData(3, "SubCategory");
@@ -259,9 +259,8 @@ namespace MarsCompTask2022.Pages
         }
 
         // Edit the Tags on Share skill
-        public void EditTags(IWebDriver driver)
+        public void EditTags()
         {
-            this.driver = driver;
             deleteTag1.Click();
             var tagData = ExcelLibHelpers.ReadData(3, "Tag");
             tags.SendKeys(tagData);
@@ -271,47 +270,46 @@ namespace MarsCompTask2022.Pages
             tags.SendKeys(Keys.Enter);
         }
 
-        public void EditAvailableDays(IWebDriver driver)
+        public void EditAvailableDays()
         {
-            this.driver = driver;
+            
             var startDateData = ExcelLibHelpers.ReadData(3, "StartDate");
             startDate.SendKeys(startDateData);
             var endDateData = ExcelLibHelpers.ReadData(3, "EndDate");
             endDate.SendKeys(endDateData);
         }
 
-        public void AddwithoutData(IWebDriver driver)
+        public void AddwithoutData()
         {
-            this.driver = driver;
             WaitHelper.WaitForElementPresent(driver, "Name", "title", 2);
             title.Click();
         }
 
-        public void AddInvaildTitle(IWebDriver driver)
+        public void AddInvaildTitle()
         {
-            this.driver = driver;
+            
             WaitHelper.WaitForElementPresent(driver, "Name", "title", 2);
             title.SendKeys(ExcelLibHelpers.ReadData(5, "Title"));
         }
 
-        public void AddInvaildDescription(IWebDriver driver)
+        public void AddInvaildDescription()
         {
-            this.driver = driver;
+            
             WaitHelper.WaitForElementPresent(driver, "Name", "description", 2);
             description.SendKeys(ExcelLibHelpers.ReadData(5, "Description"));
         }
 
-        public void AddInvalidEnterTags(IWebDriver driver)
+        public void AddInvalidEnterTags()
         {
-            this.driver = this.driver;
+            
             var tagData = ExcelLibHelpers.ReadData(5, "Tag");
             tags.SendKeys(tagData);
             tags.SendKeys(Keys.Enter);
         }
 
-        public void AddInvalidAvailDays(IWebDriver driver)
+        public void AddInvalidAvailDays()
         {
-            this.driver = driver;
+            
             var startDateData = ExcelLibHelpers.ReadData(5, "StartDate");
             startDate.SendKeys(startDateData);
             var endDateData = ExcelLibHelpers.ReadData(5, "EndDate");
@@ -323,9 +321,9 @@ namespace MarsCompTask2022.Pages
             endtime1.SendKeys(EndTimeData);
         }
 
-        public void AddInvalidSkillExchange(IWebDriver driver)
+        public void AddInvalidSkillExchange()
         {
-            this.driver = driver;
+            
             skillTradeExchange.Click();
             var skill = ExcelLibHelpers.ReadData(5, "SkillExchange");
             skill_Exchange.SendKeys(skill);

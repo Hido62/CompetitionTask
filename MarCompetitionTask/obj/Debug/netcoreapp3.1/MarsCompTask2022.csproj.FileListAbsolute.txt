@@ -351,7 +351,6 @@ C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\bin\Debug\netcore
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\bin\Debug\netcoreapp3.1\runtimes\win-x86\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
-C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.csproj.AssemblyReference.cache
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.Config.MarsResource.resources
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.csproj.GenerateResource.cache
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.GeneratedMSBuildEditorConfig.editorconfig
@@ -362,3 +361,4 @@ C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcore
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.dll
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.pdb
 C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.genruntimeconfig.cache
+C:\Users\Hido\source\repos\MarsCompTask2022\MarCompetitionTask\obj\Debug\netcoreapp3.1\MarsCompTask2022.csproj.AssemblyReference.cache

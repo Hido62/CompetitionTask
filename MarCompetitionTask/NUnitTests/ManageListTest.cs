@@ -2,7 +2,7 @@
 using MarsCompTask2022.Utils;
 using MarsCompTask2022.Pages;
 using NUnit.Framework;
-
+using OpenQA.Selenium;
 
 namespace MarsCompTask2022.NUnitTests
 {
@@ -16,14 +16,14 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
+            LoginPage loginPageObj = new LoginPage();
 
-            loginPageObj.LoginSteps(driver);
+            loginPageObj.LoginSteps();
 
             // Manage Listings Page object initialization and definition
-            ManageListings manageListsObj = new ManageListings(driver);
+            ManageListings manageListsObj = new ManageListings();
             manageListsObj.NavigateManageListings();
-            manageListsObj.ViewManageListingsActive(driver);
+            manageListsObj.ViewManageListingsActive();
             test.Log(Status.Info, "Manage Listings of Share Skill is Deleted");
         }
 
@@ -34,12 +34,12 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
+            LoginPage loginPageObj = new LoginPage();
 
-            loginPageObj.LoginSteps(driver);
+            loginPageObj.LoginSteps();
 
             // Manage Listings Page object initialization and definition
-            ManageListings manageListsObj = new ManageListings(driver);
+            ManageListings manageListsObj = new ManageListings();
             manageListsObj.NavigateManageListings();
             manageListsObj.WithoutDelManageListBtn();
             test.Log(Status.Info, "Manage Listings of Share Skill is not Deleted");
@@ -52,12 +52,12 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "Browser Initialisation");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
+            LoginPage loginPageObj = new LoginPage();
 
-            loginPageObj.LoginSteps(driver);
+            loginPageObj.LoginSteps();
 
             // Manage Listings Page object initialization and definition
-            ManageListings manageListsObj = new ManageListings(driver);
+            ManageListings manageListsObj = new ManageListings();
             manageListsObj.NavigateManageListings();
             manageListsObj.DeleteManageListingBtn();
             test.Log(Status.Info, "Manage Listings of Share Skill is Deleted");

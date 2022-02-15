@@ -17,8 +17,8 @@ namespace MarsCompTask2022.NUnitTests
             test.Log(Status.Info, "User Login");
 
             // Login Page object initialization and definition
-            LoginPage loginPageObj = new LoginPage(driver);
-            loginPageObj.LoginSteps(driver);
+            LoginPage loginPageObj = new LoginPage();
+            loginPageObj.LoginSteps();
             TestContext.WriteLine(loginPageObj);
         }
     }

@@ -6,7 +6,7 @@ namespace MarsCompTask2022.Utils
 {
     class WaitHelper
     {
-        // To use wait function for Element Present condition.
+        // To use wait  for Element Present condition.
         public static void WaitForElementPresent(IWebDriver driver, string locationType, string locationValue, int seconds)
         {
             var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
@@ -37,7 +37,7 @@ namespace MarsCompTask2022.Utils
             }
         }
 
-        // To use wait function for Element Visible condition.
+        // To use wait  for Element Visible condition.
         public static void WaitForElementVisible(IWebDriver driver, string locationType, string locationValue, int seconds)
         {
             var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
@@ -68,7 +68,7 @@ namespace MarsCompTask2022.Utils
             }
         }
 
-        // To use wait function for Element Clickable condition 
+        // To use wait for Element Clickable condition 
         public static void WaitForElementToBeClickable(IWebDriver driver, string locationType, string locationValue, int seconds)
         {
             var wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
